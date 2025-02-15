@@ -1,30 +1,45 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css' //external css
+import './App.css' 
 
-function App() { //function 
+function App() { 
   let name="Shakthi Akshata"
 
-  const MyDetails={ //calling objects
+  const MyDetails={ 
     name: "Shakthi Akshata",
     age: 19,
     dept: "M.Tech CSE"
   }
 
+  //const arrow functions
+  const department=()=>{
+    console.log("Studying in M.Tech");
+  }
+  const year=()=>{
+    console.log("In 2nd year");
+  }
+
   //alert and console log
-  alert(`Hello!`)
   console.log(`My name is ${MyDetails.name}`)
 
-  //return statement
   return (
     <>
-      {/*inline css*/}
-      <h2 style={{textAlign:"center",color:"white"}}>Inline CSS: <br /> My name is {MyDetails.name}</h2> 
+      <h3 style={{fontSize:"22px",textAlign:"center",color:"darkred"}}>Inline CSS: <br /> My name is {MyDetails.name}</h3> 
+      
       <br />
-      {/*external css*/}
+  
       <p className='MyDetails'>External CSS: <br /> My age is {MyDetails.age} </p> 
-      <p className='MyDetails'>My Dept is {MyDetails.dept}</p>
+      
+      {/*Calling arrow functions*/}
+      <button onClick={department}>Click me</button>
+      <button onClick={year}>Click Here</button>
+
+      <br />
+
+      {/*Calling using anonymous arrow function*/}
+      <button onClick={()=>console.log("Bye!")}>Want to go anonymous?</button>
+
     </>
   )
 }

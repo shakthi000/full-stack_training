@@ -1,5 +1,5 @@
 *{
-    background-color: rgb(222, 179, 179);
+    background-color: rgb(249, 232, 232);
 }
 .MyDetails{
     font-family: 'Times New Roman';
@@ -8,4 +8,23 @@
     font-style: italic;
     color:rgb(0, 0, 0);
     text-align: center;
+}
+
+button{
+  font-family: "Times",sans-serif;
+  font-size: 13px;
+  background-color: #b59191;
+  border: 1px solid #555555;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  line-height: 30px;
+  padding: 0 10px 0 11px;
+  text-align: center;
+  color: rgb(249, 232, 232);
+}
+
+button:hover {
+  background-color: rgb(134, 90, 90);
 }
