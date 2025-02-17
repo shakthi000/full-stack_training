@@ -2,46 +2,40 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css' 
+import Comp1 from './assets/Comp1'
 
 function App() { 
-  let name="Shakthi Akshata"
-
-  const MyDetails={ 
-    name: "Shakthi Akshata",
+  const myInfo={
+    name:"Shakthi Akshata",
     age: 19,
-    dept: "M.Tech CSE"
+    secId: "Sec23cj033",
+    department:"M.Tech CSE"
   }
 
-  //const arrow functions
-  const department=()=>{
-    console.log("Studying in M.Tech");
+  const herInfo={
+    name2:"Rajalakshmi",
+    age2: 19,
+    secId2: "Sec23cj001",
+    department2:"M.Tech CSE"
   }
-  const year=()=>{
-    console.log("In 2nd year");
-  }
-
-  //alert and console log
-  console.log(`My name is ${MyDetails.name}`)
 
   return (
     <>
-      <h3 style={{fontSize:"22px",textAlign:"center",color:"darkred"}}>Inline CSS: <br /> My name is {MyDetails.name}</h3> 
+      <h1 style={{textAlign:"center",color:"darkred"}}>Friends Forever :)</h1>
       
       <br />
-  
-      <p className='MyDetails'>External CSS: <br /> My age is {MyDetails.age} </p> 
-      
-      {/*Calling arrow functions*/}
-      <button onClick={department}>Click me</button>
-      <button onClick={year}>Click Here</button>
 
-      <br />
-
-      {/*Calling using anonymous arrow function*/}
-      <button onClick={()=>console.log("Bye!")}>Want to go anonymous?</button>
+      <div>
+      <h1 style={{fontSize:"20px",textAlign:"center",color:"#b59199",fontStyle:"italic"}}>Me ♥</h1>
+        <Comp1 name={myInfo.name} age={myInfo.age} secId={myInfo.secId} department={myInfo.department} />
+        <h1 style={{fontSize:"20px",textAlign:"center",color:"#b59199",fontStyle:"italic"}}>Her ♥</h1>
+        <Comp1 name={herInfo.name2} age={herInfo.age2} secId={herInfo.secId2} department={herInfo.department2} />
+      </div>
+      <button onClick={()=>{alert("Bye!")}}>Click</button>
+      <button onDoubleClick={()=>{alert("See you later!")}}>Click Me Too!</button>
 
     </>
   )
 }
 
-export default App
+export default App;

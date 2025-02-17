@@ -1,17 +1,18 @@
 *{
     background-color: rgb(249, 232, 232);
-}
-.MyDetails{
-    font-family: 'Times New Roman';
-    font-size: 20px;
-    font-weight: 5px;
-    font-style: italic;
-    color:rgb(0, 0, 0);
     text-align: center;
 }
 
+h1{
+  font-family: 'Times New Roman';
+  font-weight: 5px;
+  font-style: bolder;
+  color:rgb(0, 0, 0);
+  text-align: center;
+}
+
 button{
-  font-family: "Times",sans-serif;
+  font-family:  "Times",sans-serif;
   font-size: 13px;
   background-color: #b59191;
   border: 1px solid #555555;
