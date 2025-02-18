@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Comp1 = (props) => { //props object - used to call objects from app.jsx
+const Comp1 = (props) => {
   return (
     <div>
       <h3>

@@ -1,31 +1,77 @@
-*{
-    background-color: rgb(249, 232, 232);
-    text-align: center;
+* {
+  margin: 0;
+  font-family: 'Times New Roman', Verdana, sans-serif;
 }
 
-h1{
-  font-family: 'Times New Roman';
-  font-weight: 5px;
-  font-style: bolder;
-  color:rgb(0, 0, 0);
+.light-theme {
+  background-color: #BAD8B6;
+  color: #526D82;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme {
+  background-color: #2f4057;
+  color: #DDE6ED;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content {
   text-align: center;
 }
 
-button{
-  font-family:  "Times",sans-serif;
-  font-size: 13px;
-  background-color: #b59191;
-  border: 1px solid #555555;
+.toggle-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 14px 28px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  display: block; 
+  margin: 0 auto; 
+}
+
+.light-theme .toggle-button {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-theme .toggle-button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.toggle-button:hover {
+  opacity: 0.9;
+}
+
+.toggle-button:active {
+  transform: scale(0.95);
+}
+
+.action-button {
+  background-color: #620000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
-  display: block;
-  margin: auto;
-  line-height: 30px;
-  padding: 0 10px 0 11px;
-  text-align: center;
-  color: rgb(249, 232, 232);
+  margin: 10px;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: rgb(134, 90, 90);
+.action-button:hover {
+  background-color: #C83349;
 }
